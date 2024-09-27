@@ -13,15 +13,20 @@ Start the dev server,
 ```bash
 $ yarn start
 ```
-### 参考文档
 
-```
-https://finemaxdemo.fanruan.com/
-https://sem.fanruan.com/sem/fvs?utm_source=ad&utm_medium=bdtg&utm_campaign=fvs-zhihui&utm_term=B38023&sdclkid=b52pAL-G1526ArD6AOA&bd_vid=10018412004303516866#fv02
-```
+### 相关链接
 
-### 原型图
-```
-https://www.axureshop.com/ys/1962956
-https://charts.thingjs.com/kunpeng/preview/publish/Fr6ZNz
-```
+1. ##### 演示地址 [演示地址](https://digit.icu/)
+2. ##### 更多获取 [更多获取](https://www.shuqin.cc/)
+3. ##### 源码地址 [源码地址](https://github.com/dezhizhang/digitwin)
+
+
+### 联系我们
+
+1. ##### 关注我们
+
+<img src="https://cdn.xiaozhi.shop/digitwin/assets/weixin.jpg" width = 300 height = 300 />
+
+2. ##### 联系作者
+
+<img src="https://cdn.xiaozhi.shop/digitwin/assets/winxin.png" width = 300 height = 300 />
