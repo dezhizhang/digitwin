@@ -1,0 +1,27 @@
+.lineBox {
+  position: absolute;
+  width: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .line {
+    width: 2px;
+    height: calc(100% - 2px);
+  }
+  .arrow {
+    display: flex;
+    .arrowLeft {
+      width: 12px;
+      height: 2px;
+      transform: rotate(45deg) translate(-2px, -5px);
+      border-radius: 0 50% 0 0;
+    }
+    .arrowRight {
+      width: 12px;
+      height: 2px;
+      transform: rotate(-45deg) translate(2px, -5px);
+      border-radius: 50% 0 0 0;
+    }
+  }
+}

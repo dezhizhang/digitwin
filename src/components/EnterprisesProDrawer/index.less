@@ -1,0 +1,56 @@
+.settled-enterprises {
+  background: #101624 !important;
+
+  &-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &-item {
+      width: calc((100% - @module-margin-1) / 2);
+      margin-bottom: @module-margin-1;
+    }
+  }
+
+  &-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end
+  }
+
+  .antd-drawer-body {
+    padding: @module-margin-1;
+  }
+
+  .antd-input-outlined {
+    border: 1px solid;
+    backdrop-filter: blur(4px);
+    clip-path: inset(0 round 4px);
+    background: linear-gradient(180deg, rgba(42, 159, 243, 0.2) -3%, rgba(42, 159, 243, 0.1) 100%);
+    border-image: linear-gradient(180deg, #039EFF -3%, rgba(3, 225, 255, 0.75) 42%, rgba(3, 158, 255, 0.25) 100%) 1;
+  }
+
+  .antd-pagination .antd-pagination-item a {
+    color: @color-cyan-5;
+    background: linear-gradient(180deg, rgba(42, 159, 243, 0.2) -3%, rgba(42, 159, 243, 0.1) 100%);
+    box-sizing: border-box;
+    border: 1px solid;
+    clip-path: inset(0 round 4px);
+    border-radius: 4px;
+    border-image: linear-gradient(180deg, #039EFF -3%, rgba(3, 225, 255, 0.75) 42%, rgba(3, 158, 255, 0.25) 100%) 1;
+  }
+
+  .antd-pagination .antd-pagination-item-active a {
+    background: @color-cyan-5;
+    color: #fff;
+  }
+
+  .antd-pagination-item-ellipsis {
+    color: @color-cyan-5  !important;
+
+    &:hover {
+      color: @color-cyan-5  !important;
+    }
+  }
+
+}

@@ -1,0 +1,27 @@
+.wrapper {
+  overflow: hidden;
+
+  .sidebar {
+    width: @sidebar-width;
+    position: absolute;
+    top: @position-top;
+    z-index: 99;
+    max-width: @sidebar-width;
+    height: calc(100% - 100px);
+    overflow: hidden;
+  }
+  .sidebarleft {
+    left: @module-margin-3;
+  }
+
+  .sidebarright {
+    right: @module-margin-3;
+  }
+
+  .scene {
+    position: absolute;
+    min-width: 1200px;
+    left: 0;
+    top: 0;
+  }
+}

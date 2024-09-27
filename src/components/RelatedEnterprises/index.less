@@ -1,0 +1,41 @@
+.container {
+  max-height: 444px;
+  height: 444px;
+  overflow: hidden;
+  position: relative;
+
+  .title {
+    position: absolute;
+    z-index: 999;
+    width: 400px;
+  }
+
+  .content {
+    position: absolute;
+    top: 50px;
+    overflow: hidden;
+    width: 400px;
+    z-index: 9999;
+    height: calc(100% - 66px);
+
+    .swiper {
+      height: 150px;
+
+      .swiperslide {
+        max-height: 80px;
+        margin-bottom: 16px;
+        height: 80px;
+        overflow: hidden;
+
+      }
+    }
+  }
+
+  :global {
+    .swiper-container-free-mode>.swiper-wrapper {
+      transition-timing-function: linear !important;
+    }
+  }
+
+
+}

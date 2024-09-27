@@ -1,0 +1,53 @@
+.container {
+  min-height: @card-min-height;
+  .content {
+    .title {
+      display: flex;
+      align-content: center;
+      overflow: hidden;
+      border-bottom: 1px solid;
+      border-image-source: linear-gradient(
+        to right,
+        rgba(25, 122, 183, 1),
+        rgba(1, 157, 255, 0)
+      );
+      border-image-slice: 1;
+      padding: 6px 0;
+      margin-bottom: 8px;
+
+      & > img {
+        width: 20px;
+        height: 20px;
+        display: block;
+        margin-top: 2px;
+      }
+
+      & > h3 {
+        font-family: 思源黑体;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        margin-left: 8px;
+        cursor: pointer;
+      }
+    }
+
+    .desc {
+      font-family: Microsoft Sans Serif;
+      font-size: 14px;
+      font-weight: normal;
+      color: #ffffff;
+      margin-bottom: 16px;
+      line-height: 20px;
+      cursor: pointer;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

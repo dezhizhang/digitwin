@@ -1,0 +1,44 @@
+.container {
+  overflow-y: auto;
+  max-height: 516px;
+
+  .title {
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    color: @color-cyan-5;
+    font-weight: 500;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      border-radius: 6px;
+      background-color: @color-cyan-5;
+      margin-right: 8px;
+    }
+  }
+
+  :global {
+    .antd-collapse>.antd-collapse-item>.antd-collapse-header {
+      padding: 0;
+    }
+
+    .antd-collapse-item-active > .antd-collapse-header{
+        margin-bottom: (@module-margin-2 / 2) !important;
+    }
+
+
+    .antd-collapse>.antd-collapse-item>.antd-collapse-header .antd-collapse-arrow {
+      color: @color-cyan-5;
+    }
+
+    .antd-collapse .antd-collapse-content>.antd-collapse-content-box {
+      padding: 0 !important;
+    }
+  }
+}

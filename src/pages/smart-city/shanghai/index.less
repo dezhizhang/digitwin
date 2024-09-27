@@ -1,0 +1,23 @@
+@import url('https://cdn.xiaozhi.shop/digital/Widgets/widgets.css');
+
+
+.container {
+  .bottom {
+    margin-bottom: @module-margin-1;
+  }
+  
+  .scene {
+    width: 100vw;
+    height: 100vh;
+    canvas{
+      width: 100vw;
+      height: 100vh;
+    }
+  }
+
+  :global {
+    .cesium-viewer-bottom {
+      display: none !important;
+    }
+  }
+}

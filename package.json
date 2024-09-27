@@ -1,0 +1,65 @@
+{
+  "name": "digit",
+  "version": "0.0.8",
+  "description": "数擎科技数字孪生平台",
+  "private": true,
+  "scripts": {
+    "start": "umi dev",
+    "build": "cross-env REACT_APP_ENV=prod umi build",
+    "postinstall": "umi generate tmp",
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+    "test": "umi-test",
+    "test:coverage": "umi-test --coverage"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "dependencies": {
+    "@ant-design/pro-layout": "^6.5.0",
+    "@turf/random": "^7.0.0",
+    "@turf/turf": "^7.0.0",
+    "@umijs/max": "^4.2.13",
+    "babel-loader": "^9.1.3",
+    "cesium": "1.84.0",
+    "cesium-navigation-es6": "^3.0.9",
+    "classnames": "^2.3.0",
+    "css-loader": "^6.8.1",
+    "dayjs": "^1.11.6",
+    "ahooks": "^3.7.11",
+    "file-loader": "^6.2.0",
+    "gsap": "^3.12.5",
+    "less": "^3.12.2",
+    "less-loader": "^11.0.0",
+    "react": "17.x",
+    "react-dom": "17.x",
+    "umi": "^3.5.41",
+    "url-loader": "^4.1.1",
+    "less-vars-to-js": "^1.3.0",
+    "echarts": "^5.5.0",
+    "echarts-for-react": "^3.0.0",
+    "echarts-liquidfill": "^3.0.0",
+    "echarts-wordcloud": "^2.0.0",
+    "element-resize-event": "^2.0.9",
+    "webpack-aliyun-oss-plugin": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/element-resize-event": "^3.0.2",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@umijs/preset-react": "1.x",
+    "@umijs/test": "^3.5.41",
+    "cross-env": "^7.0.3",
+    "lint-staged": "^10.0.7",
+    "prettier": "^2.2.0",
+    "typescript": "^4.1.2",
+    "yorkie": "^2.0.0"
+  }
+}

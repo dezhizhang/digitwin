@@ -1,0 +1,59 @@
+.container {
+  width: 100vw;
+  height: @top-navbar-height;
+  min-height: @top-navbar-height;
+  max-height: @top-navbar-height;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  .title {
+    font-family: DOUYU;
+    font-size: 28px;
+    color: #FFFFFF;
+    text-shadow: 0 4px 4px rgba(255, 255, 255, 0.4), 0 0 10px #13B8FF;
+    position: absolute;
+    line-height: @top-navbar-height;
+    height: 100%;
+    text-align: center;
+    min-width: 340px;
+  }
+
+  .breadcrumb {
+    position: absolute;
+    left: @module-padding-3;
+    z-index: 10;
+  }
+
+  .position {
+    position: absolute;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, 0%);
+  }
+
+  .datetime {
+    position: absolute;
+    right: 16px;
+    top: 10px;
+    z-index: 99;
+    color: #B3E2FF;
+    text-align: right;
+
+    .year {
+      font-family: PingFang SC;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .time {
+      font-family: 思源黑体;
+      font-size: 14px;
+      font-weight: normal;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+.container {
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  padding: (@module-margin-2 / 2);
+  margin-bottom: (@module-margin-2 / 2);
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .title {
+      font-family: PingFangSC-Medium;
+      font-size: @size-text-1;
+      color: @color-blue-0;
+      font-weight: 500;
+      overflow: hidden;
+      white-space: nowrap;
+      display: inline-block;
+      text-overflow: ellipsis;
+      max-width: calc(@sidebar-width - (@module-margin-3 * 11));
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      .tag {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: (@border-radius / 2);
+        font-family: SourceHanSansCN-Regular;
+        font-size: @size-text-3;
+        color: @color-cyan-5;
+        max-height: 24px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: inline-block;
+        padding: (@module-padding-1 / 6) (@module-padding / 2);
+      }
+
+      .triangle {
+        position: absolute;
+        top: 0;
+        width: 12px;
+        left: 100%;
+        border: 12px solid;
+        border-color: transparent transparent transparent rgba(255, 255, 255, 0.1);
+      }
+    }
+
+  }
+
+  :global {
+    .antd-collapse>.antd-collapse-item>.antd-collapse-header .antd-collapse-arrow {
+      color: @color-blue-0  !important;
+    }
+
+    .antd-collapse-item-active > .antd-collapse-header{
+        margin-bottom: (@module-margin-1 / 2) !important;
+    }
+
+    .antd-collapse.antd-collapse-icon-position-end>.antd-collapse-item>.antd-collapse-header .antd-collapse-expand-icon {
+      padding-inline-start: 24px;
+    }
+  }
+}

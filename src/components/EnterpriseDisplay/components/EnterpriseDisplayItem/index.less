@@ -1,0 +1,34 @@
+.container {
+  height: 100px;
+  max-height: 100px;
+  overflow: hidden;
+
+  .title {
+    font-family: @font-family-1;
+    font-size: @size-text-3;
+    color: #B4C0CC;
+    margin-bottom: 4px;
+  }
+
+  .count {
+    font-family: DIN Alternate;
+    font-size: @size-title-2;
+    color: @color-cyan-5;
+    vertical-align: bottom;
+
+    .unit {
+      font-family: @font-family-1;
+      font-size: @size-text-3;
+      color: white;
+    }
+  }
+
+  .desc {
+    font-family: @font-family-1;
+    font-size: 10px;
+    color: #B4C0CC;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

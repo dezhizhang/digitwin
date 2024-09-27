@@ -1,0 +1,42 @@
+.container {
+  min-height: @card-min-height;
+  
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+
+    .item {
+      margin-bottom: @module-padding-1 * 2;
+      margin-left: @module-margin-1 / 2;
+      cursor: pointer;
+
+      .title {
+        font-family: @font-family-1;
+        color: #b4c0cc;
+        font-weight: 500;
+        font-size: @size-title-4;
+        margin-bottom: @module-margin-1 / 2;
+      }
+
+      .description {
+        font-family: DIN Alternate;
+        font-weight: bold;
+        font-size: @size-title-1;
+        color: @color-cyan-5;
+
+        &>span {
+          font-family: @font-family-1;
+          font-size: @size-title-4;
+          color: #fff;
+          display: inline-block;
+          margin-left: 4px;
+        }
+      }
+
+      &:nth-last-of-type(1),
+      &:nth-last-of-type(2) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &:nth-of-type(4n) {
+    margin-right: 0;
+  }
+
+  .img {
+    width: 80px;
+    height: 80px;
+    display: block;
+  }
+
+  .content {
+    .title {
+      font-family: 思源黑体;
+      font-size: 14px;
+      color: #B4C0CC;
+      margin-bottom: @module-margin-1 / 2;
+    }
+
+    .number {
+      font-family: DIN Alternate;
+      font-size: 32px;
+      font-weight: bold;
+      color: @color-cyan-5;
+      vertical-align: bottom;
+
+      .unit {
+        font-family: 思源黑体;
+        font-size: 14px;
+        color: white;
+      }
+    }
+  }
+}

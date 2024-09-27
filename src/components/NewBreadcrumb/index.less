@@ -1,0 +1,30 @@
+.container {
+  height: @top-navbar-height;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .breadcrumb {
+    font-family: 思源黑体;
+    font-size: @size-title-3;
+    font-weight: normal;
+  }
+
+  :global{
+    .antd-breadcrumb-separator{
+      color: #fff !important;
+    }
+  }
+
+  .breadcrumb1 {
+    color: rgba(255, 255, 255, 0.45)
+  }
+
+  .breadcrumb2 {
+    &>a {
+      color: #fff !important
+    }
+
+  }
+
+}
